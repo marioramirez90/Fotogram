@@ -1,0 +1,4 @@
+const myImage = [
+"img/"
+
+]

@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
     color: whitesmoke;
+     font-family: "Figtree", sans-serif;
+}
+body{
+    background-color: rgba(6, 23, 30, 1);
 }
 
 header{
@@ -15,17 +19,23 @@ nav{
 
 
 main{
-    background-color: rgba(6, 23, 30, 1);
+    display: flex;
     flex-direction: column;
     height: calc(100vh - 96px);
     overflow-y: auto;
     justify-content: space-between;
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+}
 
-footer{
-background-image: url(img/footer.svg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+
+.fotogram-footer{
+    height: 100px;
+    background-image: url(img/footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
