@@ -1,5 +1,7 @@
-body{
- margin: 0;
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
 }
 
 header{
@@ -7,14 +9,23 @@ header{
  padding: 20px;
 }
 
+nav{
+    margin-left: 140px;
+}
+
+
+main{
+    background-color: rgba(6, 23, 30, 1);
+    flex-direction: column;
+    height: calc(100vh - 96px);
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+
 footer{
 background-image: url(img/footer.svg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-
-}
-
-nav{
-    margin-left: 140px;
 }
