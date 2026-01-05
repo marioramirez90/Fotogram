@@ -1,0 +1,28 @@
+body{
+    background-color:rgba(6, 23, 30, 1);
+   margin: 0;
+   padding: 0;
+   
+}
+
+header{
+  display: flex;
+  position: absolute;
+ background-color:rgba(9, 33, 42, 1);
+ left: 0;
+ right: 0;
+ justify-content: start;
+padding: 20px;
+}
+main{
+    height: 100vh;
+}
+footer{
+    background-image: url(img/footer.svg);
+   
+
+}
+
+.logo-icons{
+    margin-left: 140px;
+}
