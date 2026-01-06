@@ -13,7 +13,22 @@
 
     <main>
        <h1>Your personal photo album</h1>
-       <section id="image"></section>
+       <section aria-haspopup="bild-vergrössern" aria-controls="openGallery" id="image"></section>
+
+       <dialog id="openGallery" aria-labelledby="ImageTitle" aria-describedby="numbersOfImages" >
+        <header class="openGallery-header">
+            <h2 id="ImageTitle">hier komt img name</h2>
+            <button class="close-btn" claria-label="schliessen" onclick="closeGalleryImage()"><img src="img/Close.svg" alt=""></button>
+        </header>
+        <section id="dialogImage">
+        
+        </section>
+        <footer>
+            <button aria-label="rechts">rechts</button>
+            <span id="numbersOfImages"></span>
+            <button aria-label="links">links</button>
+        </footer>
+       </dialog>
     </main>
  
     <footer class="fotogram-footer"> <img class="da-logo" src="img/daLogo.svg" alt="developer-akademie-logo">

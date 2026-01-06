@@ -19,6 +19,22 @@ function loadMyImage(){
     const myImageRef = document.getElementById('image');
 
     for(let i = 0; i < myImage.length; i++){
-    myImageRef.innerHTML += `<img id="gallery${i}" class="gallery-image" src="${myImage[i]}" alt="myImage${i}">`;
+    myImageRef.innerHTML += `<img onclick="openGalleryImage()" id="gallery${i}" class="gallery-image" src="${myImage[i]}" alt="myImage${i}">`;
     }
     }
+
+
+    const dialogRef = document.getElementById("openGallery");
+    function openGalleryImage(){
+        dialogRef.showModal();
+        dialogRef.classList.add("open-Image");
+    }
+    function closeGalleryImage(){
+        dialogRef.close();
+        dialogRef.classList.remove("open-Image")
+    }
+
+
+
+
+

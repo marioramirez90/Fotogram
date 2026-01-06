@@ -17,7 +17,7 @@ body{
     background-color:var(--bg_darkblue_dark);
 }
 
-header{
+.fotogram-header{
  background-color:var(--bg_darkblue_light);
  padding: 20px;
 }
@@ -74,6 +74,41 @@ border: 2px solid var(--bg_blue_light);
 
 }
 
+.open-Image{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 620px;
+    align-items: center;
+    gap: 48px;
+    padding: 56px 64px 56px 64px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--bg_darkblue_dark);
+}
+.openGallery-header{
+    display: flex;
+   gap: 250px;
+
+}
+
+ .close-btn{
+   background: none;
+    border:none ;
+    border-radius: 50% ;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+ }
+.close-btn:hover{
+    background-color:rgba(18, 70, 88, 1);
+}
+
+
+
 .fotogram-footer{
     display: flex;
     flex-direction: column;
@@ -97,3 +132,4 @@ color: rgba(98, 123, 132, 1);
     width: auto;
 
 }
+
