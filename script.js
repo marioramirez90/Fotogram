@@ -18,7 +18,7 @@ const myImage = [
 function loadMyImage(){
     const myImageRef = document.getElementById('image');
 
-    for(let i = 1; i < myImage.length; i++){
+    for(let i = 0; i < myImage.length; i++){
     myImageRef.innerHTML += `<img id="gallery${i}" class="gallery-image" src="${myImage[i]}" alt="myImage${i}">`;
     }
     }
