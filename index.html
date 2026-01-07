@@ -20,14 +20,14 @@
             <h2 id="ImageTitle">hier komt img name</h2>
             <button class="close-btn" claria-label="schliessen" onclick="closeGalleryImage()"><img src="img/Close.svg" alt=""></button>
         </header>
-        <section class="open-gallery-image  id="openGalleryImage">
+        <section class="open-gallery-image" id="openGalleryImage">
       
         </section>
         <footer class="openGallery-footer">
-            <button class="next-button" aria-label="links"><img src="img/Arrow-left.svg" alt=""></button>
-            <span id="numbersOfImages">1/12</span>
+            <button onclick="nextImage()" class="next-button" aria-label="links"><img src="img/Arrow-left.svg" alt=""></button>
+            <span onload="imageName()" id="numbersOfImages">1/12</span>
             
-            <button class="next-button" aria-label="rechts"><img src="img/Arrow-Right.svg" alt=""></button>
+            <button onclick="prevImage()" class="next-button" aria-label="rechts"><img src="img/Arrow-Right.svg" alt=""></button>
         </footer>
        </dialog>
     </main>

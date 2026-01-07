@@ -89,14 +89,14 @@ border: 2px solid var(--bg_blue_light);
 }
 .openGallery-header{
     display: flex;
-    gap: 300px;
+    gap: 360px;
 
 }
 
 .open-gallery-image {
     width: 550px;
     height: 360px;
-    background: white;
+    
 }
  .openGallery-footer{
     display: flex;
@@ -115,10 +115,13 @@ border: 2px solid var(--bg_blue_light);
     justify-content: center;
     align-items: center;
     outline: none;
+    cursor: pointer;
  }
 .close-btn:hover{
     background-color:rgba(18, 70, 88, 1);
 }
+
+
 
 .next-button{
      background: none;
