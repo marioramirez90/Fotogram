@@ -43,8 +43,7 @@ function loadMyImage(){
         dialogRef.classList.remove("open-Image")
     }
 
-
-    
+   
 
 
 
