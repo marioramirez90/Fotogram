@@ -106,7 +106,6 @@ h1 {
     width: 550px;
     height: 360px;
     object-fit: cover;
-
 }
 
 .openGallery-footer {
@@ -181,7 +180,6 @@ h1 {
 @media(max-width: 1000px) {
 
     h1 {
-
         font-size: 48px;
         text-align: center;
         padding-left: 30px;
@@ -197,9 +195,7 @@ h1 {
 @media(max-width: 740px) {
 
     .fotogram-footer {
-
         height: 120px;
-
     }
 
     .open-Image {
@@ -207,14 +203,11 @@ h1 {
         width: 343px;
         gap: 48px;
         padding: 16px 16px 16px 16px;
-
     }
 
     .open-gallery-image {
         width: 310px;
         height: 375px;
-
-
     }
 
     .openGallery-header {
@@ -224,12 +217,10 @@ h1 {
         padding-right: 15px;
         margin-top: 10px;
         margin-bottom: -20px;
-
     }
 
     h2 {
         align-self: flex-start;
-
     }
 
 
@@ -243,7 +234,6 @@ h1 {
         .nav-logo img {
             width: 168px;
             height: 32px;
-
         }
 
         .fotogram-header {
