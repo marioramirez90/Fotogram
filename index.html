@@ -10,17 +10,18 @@
   <body onload="loadMyImage()">
     <header class="fotogram-header">
       <nav aria-label="kopfzeile" class="nav-logo">
-        <img class="logo-icons" src="img/logo.svg" alt="logo_der_website" />
+        <img tabindex="0" class="logo-icons" src="img/logo.svg" alt="logo_der_website" />
       </nav>
     </header>
 
     <main>
-      <h1>Your personal photo album</h1>
+      <h1 tabindex="0">Your personal photo album</h1>
       <section
         class="images"
         aria-haspopup="bild-vergrössern"
         aria-controls="openGallery"
         id="image"
+       
       ></section>
 
       <dialog
@@ -30,27 +31,24 @@
       >
         <header class="openGallery-header">
           <h2 id="ImageTitle">hier komt img name</h2>
-          <button
+          <button tabindex="0"
             class="close-btn"
             aria-label="schliessen"
             onclick="closeGalleryImage()"
           >
-            <img src="img/Close.svg" alt="" />
+            <img tabindex="0" src="img/Close.svg" alt="" />
           </button>
         </header>
         <section class="open-gallery-image" id="openGalleryImage"></section>
         <footer class="openGallery-footer">
-          <button onclick="leftArray()" class="next-button" aria-label="links">
-            <img src="img/Arrow-left.svg" alt="" />
+          <button  onclick="leftArray()" class="next-button" aria-label="links">
+            <img tabindex="0" src="img/Arrow-left.svg" alt="" />
           </button>
-          <span onload="imageName()" id="numbersOfImages">1/12</span>
+          <span  onload="imageName()" id="numbersOfImages">1/12</span>
 
-          <button
-            onclick="rightArray()"
-            class="next-button"
-            aria-label="rechts"
-          >
-            <img src="img/Arrow-Right.svg" alt="" />
+          <button onclick="rightArray()"class="next-button"aria-label="rechts"
+            >
+            <img tabindex="0" src="img/Arrow-Right.svg" alt="" />
           </button>
         </footer>
       </dialog>
