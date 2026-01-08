@@ -3,6 +3,7 @@
     box-sizing: border-box;
     color: var(--font_color);
     font-family: "Figtree", sans-serif;
+    
 }
 
 :root {
@@ -21,19 +22,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
     background-color: var(--bg_darkblue_dark);
-    max-width: 1640px;
+    overflow: hidden;
+    height: 100%;
+  
 }
 
 .fotogram-header {
     background-color: var(--bg_darkblue_light);
     padding: 20px;
+    
 }
 
 .nav-logo {
     padding-left: 140px;
-
+    
+    max-width: 1440px;
+    margin: auto;
+    
 }
 
 
@@ -41,12 +47,15 @@ main {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 185px);
-    overflow-y: auto;
     gap: 80px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 100px;
-
+    max-width: 1440px;
+    margin: auto;
+    overflow-y: scroll;
+    
+    
 }
 
 h1 {
@@ -64,6 +73,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px 16px;
+    cursor: pointer;
 
 
 
@@ -266,13 +276,17 @@ h1 {
         }
 
 
-        @media(max-width: 372px) {
+        @media(max-width: 440px) {
             .open-gallery-image {
                 justify-content: center;
                 width: 280px;
                 height: 375px;
             }
-
+    
+        main {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
             .fotogram-footer {
                 background-image: url(img/Subtract.svg);
                 height: 120px;
