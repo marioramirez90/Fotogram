@@ -65,7 +65,13 @@ function rightArray() {
     }
     openGalleryImage(currentIndex);
 }
-    
+document.addEventListener("keydown", e => {
+    if (dialogRef.open) {
+        if (e.key === "ArrowLeft") leftArray();
+        else if (e.key === "ArrowRight") rightArray();
+        else if (e.key === "Escape") closeGalleryImage();
+    }
+});
 
    
 
