@@ -1,7 +1,7 @@
 const myImage =  [
   "img/Eisberge vor Alaska.jpg",
   "img/Eiswelle.jpg",
-  "img/Ente im Wasser.jpg",
+  "img/Ente.jpg",
   "img/Gewitterhimmel.png",
   "img/Gletschersee.jpg",
   "img/Küstenlandschaft.jpg",
