@@ -33,16 +33,17 @@ function openGalleryImage(index){
     document.getElementById("openGalleryImage").innerHTML = `<img src="${myImage[index]}" class="open-gallery-image" alt="Meine-Bilder">`;
     document.getElementById("numbersOfImages").textContent= `${currentIndex + 1}/${myImage.length}`;
 
-let myImageName = myImage[index].replace("img/", "");
+let myImageName = myImage[index].replace("img/","");
     document.getElementById("ImageTitle").textContent=myImageName;
     }
-   
 
 function closeGalleryImage(){
     dialogRef.close();
     dialogRef.classList.remove("open-Image")
-        
     }
+    dialogRef.addEventListener("click", e => e.target === dialogRef && closeGalleryImage());
+    dialogRef.addEventListener("cancel", closeGalleryImage);
+
 function leftArray() {
     if (currentIndex > 0) {
     currentIndex -= 1;
