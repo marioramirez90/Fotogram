@@ -17,31 +17,50 @@ const myImage = [
 let currentIndex = 0;
 
 function loadMyImage(){
-    const myImageRef = document.getElementById('image');
+const myImageRef = document.getElementById('image');
 
-    for(let i = 0; i < myImage.length; i++){
-    myImageRef.innerHTML += `<img onclick="openGalleryImage(${i})" id="gallery${i}" class="gallery-image" src="${myImage[i]}" alt="myImage${i}">`;
-    }
-    }
+for(let i = 0; i < myImage.length; i++){
+     myImageRef.innerHTML += `<img onclick="openGalleryImage(${i})" id="gallery${i}" class="gallery-image" src="${myImage[i]}" alt="bilder-von der Gallery">`;
+}
+}
 
 
-    const dialogRef = document.getElementById("openGallery");
-    function openGalleryImage(index){
-        currentIndex =index;
-        dialogRef.showModal();
-        dialogRef.classList.add("open-Image");
-        document.getElementById("openGalleryImage").innerHTML = `<img src="${myImage[index]}" class="open-gallery-image">`;
-        document.getElementById("numbersOfImages").textContent= `${currentIndex + 1}/${myImage.length}`;
+const dialogRef = document.getElementById("openGallery");
+function openGalleryImage(index){
+    currentIndex =index;
+    dialogRef.showModal();
+    dialogRef.classList.add("open-Image");
+    document.getElementById("openGalleryImage").innerHTML = `<img src="${myImage[index]}" class="open-gallery-image" alt="Meine-Bilder">`;
+    document.getElementById("numbersOfImages").textContent= `${currentIndex + 1}/${myImage.length}`;
 
-        let myImageName =myImage[index];
-        document.getElementById("ImageTitle").textContent=myImageName;
+let myImageName = myImage[index].replace("img/", "");
+    document.getElementById("ImageTitle").textContent=myImageName;
     }
    
 
-    function closeGalleryImage(){
-        dialogRef.close();
-        dialogRef.classList.remove("open-Image")
+function closeGalleryImage(){
+    dialogRef.close();
+    dialogRef.classList.remove("open-Image")
+        
     }
+function leftArray() {
+    if (currentIndex > 0) {
+    currentIndex -= 1;
+    } else {
+    currentIndex = myImage.length - 1;
+ }
+    openGalleryImage(currentIndex);
+}
+
+function rightArray() {
+    if (currentIndex < myImage.length - 1) {
+        currentIndex += 1;
+    } else {
+        currentIndex = 0;
+    }
+    openGalleryImage(currentIndex);
+}
+    
 
    
 

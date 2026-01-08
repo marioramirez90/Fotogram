@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fotogram</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body onload="loadMyImage()">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadMyImage()">
     <header class="fotogram-header">
-    <nav class="nav-logo"><img class="logo-icons" src="img/logo.svg" alt="logo_der_website"></nav>
+      <nav class="nav-logo">
+        <img class="logo-icons" src="img/logo.svg" alt="logo_der_website" />
+      </nav>
     </header>
 
     <main>
-       <h1>Your personal photo album</h1>
-       <section class="images" aria-haspopup="bild-vergrössern" aria-controls="openGallery" id="image"></section>
+      <h1>Your personal photo album</h1>
+      <section
+        class="images"
+        aria-haspopup="bild-vergrössern"
+        aria-controls="openGallery"
+        id="image"
+      ></section>
 
-       <dialog id="openGallery" aria-labelledby="ImageTitle" aria-describedby="numbersOfImages" >
+      <dialog
+        id="openGallery"
+        aria-labelledby="ImageTitle"
+        aria-describedby="numbersOfImages"
+      >
         <header class="openGallery-header">
-            <h2 id="ImageTitle">hier komt img name</h2>
-            <button class="close-btn" claria-label="schliessen" onclick="closeGalleryImage()"><img src="img/Close.svg" alt=""></button>
+          <h2 id="ImageTitle">hier komt img name</h2>
+          <button
+            class="close-btn"
+            aria-label="schliessen"
+            onclick="closeGalleryImage()"
+          >
+            <img src="img/Close.svg" alt="" />
+          </button>
         </header>
-        <section class="open-gallery-image" id="openGalleryImage">
-      
-        </section>
+        <section class="open-gallery-image" id="openGalleryImage"></section>
         <footer class="openGallery-footer">
-            <button onclick="" class="next-button" aria-label="links"><img src="img/Arrow-left.svg" alt=""></button>
-            <span onload="imageName()" id="numbersOfImages">1/12</span>
-            
-            <button onclick="" class="next-button" aria-label="rechts"><img src="img/Arrow-Right.svg" alt=""></button>
+          <button onclick="leftArray()" class="next-button" aria-label="links">
+            <img src="img/Arrow-left.svg" alt="" />
+          </button>
+          <span onload="imageName()" id="numbersOfImages">1/12</span>
+
+          <button
+            onclick="rightArray()"
+            class="next-button"
+            aria-label="rechts"
+          >
+            <img src="img/Arrow-Right.svg" alt="" />
+          </button>
         </footer>
-       </dialog>
+      </dialog>
     </main>
- 
-    <footer class="fotogram-footer"> <img class="da-logo" src="img/daLogo.svg" alt="developer-akademie-logo">
-     <span>© 2023 Developer Akademie GmbH</span>
+
+    <footer class="fotogram-footer">
+      <img class="da-logo" src="img/daLogo.svg" alt="developer-akademie-logo" />
+      <span>© 2023 Developer Akademie GmbH</span>
     </footer>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
